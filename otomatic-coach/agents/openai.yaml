@@ -1,0 +1,4 @@
+interface:
+  display_name: "Otomatic-coach"
+  short_description: "Configure Otomatic.AI et WordPress pas à pas"
+  default_prompt: "Utilise $otomatic-coach pour m’aider à choisir et vérifier mon prochain réglage Otomatic.AI."
