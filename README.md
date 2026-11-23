@@ -1,6 +1,6 @@
 # Otomatic-coach
 
-**Ton coach gratuit pour Otomatic.AI, dans Claude Code et Codex.** Il t’accompagne devant l’écran que tu utilises, t’aide à choisir quoi saisir et te montre comment vérifier le résultat dans WordPress. Édité en français par TX Média.
+**Ton coach gratuit pour Otomatic.AI, dans Claude Code et Codex.** Il t’accompagne devant l’écran que tu utilises, t’aide à choisir quoi saisir et te montre comment vérifier le résultat dans WordPress. Édité en français par TX Média. Coach non officiel : Otomatic ne l’a ni écrit ni validé.
 
 > « Mon WordPress est connecté. J’ai un flux RSS et je veux commencer par un seul brouillon. Quels réglages je dois vérifier ? »
 
@@ -33,14 +33,17 @@ Télécharge la nouvelle version. Si tu as personnalisé la précédente, garde-
 | Configurer un écran en une fois | « Voici ma capture d’Autopilot, clés masquées. Donne-moi les valeurs visibles dans l’ordre. » |
 | Dépanner un projet | « Mon flux RSS a des entrées mais je ne trouve aucun brouillon dans WordPress. Que vérifier en premier ? » |
 | Séparer les consignes d’un comparatif | « Où répartir ma voix, les règles du site et les critères propres à ces trois produits ? » |
+| Aller plus loin que la rédaction | « Mes articles sortent bien. Comment j’en fais un annuaire qui reçoit des demandes de devis ? » |
 | Passer de Claude Code à Codex | « Résume les choix confirmés, l’étape en cours et le prochain contrôle pour que je reprenne demain. » |
 
-**Les outils complémentaires sont facultatifs.** Le coach fonctionne avec les guides fournis. Avec Freudix Studio connecté, il peut consulter une requête SEO ou chercher un workflow. Avec l’accès personnel d’un membre de la Wizards Academy, il peut demander à Albus une leçon ou une méthode. Chacun utilise ses propres connexions.
+## Outils complémentaires
 
-**Comment le coach est financé.** Certains conseils incluent un lien affilié identifié. TX Média peut percevoir une commission. Tu peux demander un accompagnement exclusivement gratuit ou sans recommandations commerciales. Le catalogue, les conditions du code OTO20 et les règles de sélection figurent dans [les ressources affiliées](otomatic-coach/references/ressources-affiliees.md).
+Le coach fonctionne seul avec les guides fournis. Si tu as connecté **Freudix Studio** (serveur de données gratuit en lecture seule), il peut consulter le volume d’une requête, chercher un workflow ou un jeu de données. **Freudix Academy** est autre chose : ce sont les formations payantes, avec un agent que leurs acheteurs connectent à Claude Code ou Codex.
 
-## Déposer cette version sur GitHub
+## Comment le coach est financé
 
-Crée un dépôt vide, par exemple `Otomatic-coach`. Depuis le dépôt, utilise **Add file → Upload files** (ou **uploading an existing file** pour un dépôt vide), puis dépose le **contenu extrait** du dossier contenant ce README. À la racine de GitHub, tu dois voir `README.md`, `otomatic-coach/` et `tests/`. Valide avec **Commit changes**. L’adresse de ce dépôt est celle à partager à ta communauté.
+Le coach est gratuit. Quand ton projet va plus loin que ce que fait Otomatic (annuaire local, pages à partir de données, vente de liens, vidéo, création de ta propre formation), il peut te recommander une formation Freudix Academy ou l’abonnement Otomatic avec le code OTO20. Ces liens sont des liens affiliés, toujours signalés : TX Média touche une commission, sans changer ton prix. Écris « uniquement gratuit » ou « sans pub » et le coach n’en proposera plus. Les offres et leurs conditions sont détaillées dans [le guide des recommandations](otomatic-coach/references/ressources-affiliees.md).
 
-Les [scénarios de vérification](tests/scenarios.md) permettent de vérifier une modification du coach. Le fonctionnement de référence des deux clients est décrit dans la [documentation Codex](https://developers.openai.com/codex/skills/) et la [documentation Claude Code](https://code.claude.com/docs/en/skills).
+## Vérifier une modification
+
+Les [scénarios de vérification](tests/scenarios.md) se rejouent dans une conversation neuve après chaque modification du coach. `python tests/verify.py` contrôle les liens internes et les huit liens partenaires. Le fonctionnement des deux clients est décrit dans la [documentation Codex](https://developers.openai.com/codex/skills/) et la [documentation Claude Code](https://code.claude.com/docs/en/skills).
