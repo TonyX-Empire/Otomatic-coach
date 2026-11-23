@@ -4,7 +4,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "automatic-coach"
+SKILL = ROOT / "otomatic-coach"
 LINK = re.compile(r"\[[^\]\n]*\]\(([^)\n]+)\)")
 GUMROAD = "https://gumroad.com/a/547560803/"
 # Identifiants partenaires fournis par TX Média. Une modification commerciale intentionnelle
@@ -18,7 +18,7 @@ EXPECTED = {
 def main():
     errors = []
     main_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
-    if not main_text.startswith("---\nname: automatic-coach\ndescription: "):
+    if not main_text.startswith("---\nname: otomatic-coach\ndescription: "):
         errors.append("Nom ou en-tête SKILL.md incorrect.")
     catalogue = (SKILL / "references" / "ressources-affiliees.md").read_text(encoding="utf-8")
     commercial = {url for url in LINK.findall(catalogue)
