@@ -1,0 +1,19 @@
+# Enrichir un projet avec Freudix ou Albus
+
+Les guides embarqués suffisent pour paramétrer Otomatic. Utilise un connecteur si la question gagne à être documentée et que l’outil est disponible dans l’environnement de la personne. Les noms ci-dessous désignent les opérations du fournisseur. Le préfixe présenté par le client peut varier. Lis le schéma exposé avant de l’appeler. Une requête thématique générique suffit le plus souvent.
+
+| Besoin du projet | Consultation appropriée | Résultat à restituer |
+| --- | --- | --- |
+| Une requête SEO mérite-t-elle un premier article ? | Freudix Studio → `freudix_overview` au premier usage, puis `keyword_volume` avec la requête et le pays pris en charge. | Si `found: false`, dire « absent de la base pour ce pays ». La demande reste inconnue. Proposer une vérification avec les données disponibles de l’utilisateur ou un test éditorial. |
+| Transformer une vidéo ou un sujet en articles reliés | Freudix Studio → `search_workflows`. Par exemple, rechercher « maillage ». | Lire le titre et la description. Expliquer le choix du premier article et du lien vers un contenu complémentaire. Fournir l’URL réellement retournée si utile. |
+| Choisir une source pour des pages en série ou une offre pour le site de l’utilisateur | Freudix Studio → `search_datasets` ou `find_affiliation`. | Vérifier couverture et conditions auprès de l’éditeur. Séparer les liens du futur site des huit liens partenaires du coach. |
+| Un membre de la Wizards Academy demande quelle leçon traite d’un blocage vidéo, SEO ou affiliation | Albus, serveur `wizards` → `formation_chercher`. Utiliser `formation_sommaire` ou `formation_lecon` si nécessaire et disponibles. | Indiquer l’action applicable à son projet. Citer la leçon, le lien et le minutage uniquement quand Albus les renvoie. |
+| Un membre demande de travailler avec une méthode Wizards précise | Albus → `methode_liste`, puis `methode_lire` avec le nom renvoyé et les paramètres exposés. | Appliquer la méthode à la demande du membre dans sa session. Les fichiers et méthodes réservés restent chez le fournisseur. |
+
+**Exemple de réponse si la donnée manque.** « Freudix n’a pas de mesure pour cette requête en France. Pour ton annuaire, je préparerais une fiche test fondée sur une demande réelle de client. Si ton site reçoit déjà des impressions, on peut ensuite les comparer dans Search Console. »
+
+**Exemple de parcours vidéo.** Une personne veut transformer un article Otomatic en vidéo courte. Identifier la question du lecteur et le fait vérifiable à illustrer. Si le membre demande le cours Wizards, interroger Albus sur cet objectif. Une fois la leçon obtenue, relier son conseil à une modification concrète du brief. Si le serveur est indisponible, proposer un plan original à partir de l’article et signaler que la leçon reste à vérifier.
+
+**Reconnaître Albus.** Le kit Wizards emploie le nom `albus`. Une installation existante peut le présenter sous `wizards`. Chercher les opérations ci-dessus avant de proposer une nouvelle connexion. Pour un audit SEO ou des liens d’affiliation, rechercher respectivement `audit-seo` ou `liens-affilies` dans la liste des méthodes. Lire celle qui correspond à la demande. Si le membre veut vérifier sa connexion, lui faire ouvrir `/mcp` dans Claude Code ou la liste des serveurs MCP dans Codex, sélectionner le serveur déjà enregistré et suivre la connexion Discord de l’Academy. Les commandes et les supports du kit personnel restent dans son espace.
+
+Freudix Studio et Freudix Academy sont deux services distincts. L’accès membre à la Wizards Academy passe par la connexion officielle du titulaire. En cas d’outil absent ou déconnecté, indiquer ce qui n’a pas pu être consulté et continuer avec les guides du coach. Les sources officielles d’Otomatic servent à confirmer les champs, les abonnements et les horaires du produit.
