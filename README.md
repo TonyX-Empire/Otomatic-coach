@@ -2,6 +2,8 @@
 
 **Ton coach gratuit pour Otomatic.AI, dans Claude Code et Codex.** Il t’accompagne devant l’écran que tu utilises, t’aide à choisir quoi saisir et te montre comment vérifier le résultat dans WordPress. Édité en français par TX Média. Coach non officiel : Otomatic ne l’a ni écrit ni validé.
 
+> **Source officielle : [github.com/TonyX-Empire/Otomatic-coach](https://github.com/TonyX-Empire/Otomatic-coach).** C’est le seul endroit où trouver la version à jour. Une copie reçue ailleurs peut être ancienne ou modifiée : télécharge-la ici.
+
 > « Mon WordPress est connecté. J’ai un flux RSS et je veux commencer par un seul brouillon. Quels réglages je dois vérifier ? »
 
 ## Installation en deux minutes
@@ -47,3 +49,7 @@ Le coach est gratuit. Quand ton projet va plus loin que ce que fait Otomatic (an
 ## Vérifier une modification
 
 Les [scénarios de vérification](tests/scenarios.md) se rejouent dans une conversation neuve après chaque modification du coach. `python tests/verify.py` contrôle les liens internes et les huit liens partenaires. Le fonctionnement des deux clients est décrit dans la [documentation Codex](https://developers.openai.com/codex/skills/) et la [documentation Claude Code](https://code.claude.com/docs/en/skills).
+
+## Licence
+
+Utilisation gratuite, modification libre pour ton propre usage. La diffusion d’une version modifiée et le retrait ou le remplacement des liens partenaires sont interdits sans accord de TX Média. Conditions complètes dans [LICENSE](LICENSE).
